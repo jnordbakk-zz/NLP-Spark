@@ -1,0 +1,82 @@
+<!doctype html>
+
+
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+ 
+    <!-- d3 JavaScript -->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+    <nav class="navbar">
+      <div class="container header-container">
+          <div class="navbar-header">
+          <a class="navbar-brand" href="http://127.0.0.1:5000/">Image finder</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right my-menu">
+            <li><a href="http://127.0.0.1:5000/" class="nav-btn">Home</a></li>
+            <!-- <li><a href="http://127.0.0.1:5000/listingsall" class="nav-btn">Data</a></li> -->
+          </ul>
+      </div>
+    </nav>
+  
+
+  </head>
+
+
+
+<title>Upload new File</title>
+<h1>Results</h1>
+
+<!-- Prediction 1 {{data['predictions'][0].get('label')}}
+
+Probability 1 {{data['predictions'][0].get('probability')}}
+
+Prediction 2 {{data['predictions'][1].get('label')}}
+
+Probability 2 {{data['predictions'][1].get('probability')}} -->
+
+
+<!-- {{ data | tojson }} -->
+
+<!-- {{ data['predictions'] }} -->
+
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">  
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th>Results</th>
+    <th>Probability</th>
+
+    <script>
+        //https://stackoverflow.com/questions/11178426/how-can-i-pass-data-from-flask-to-javascript-in-a-template
+        //http://jinja.pocoo.org/docs/2.10/
+        var data = {{ data | tojson }}  //data from python converted to json
+    </script>
+
+  </tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+<!-- <script src="js/index.js"></script> -->
+<!-- <script src="../static/app.js"></script> -->
+<script src="../static/js/app2.js"></script>
+
+
