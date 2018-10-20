@@ -34,24 +34,6 @@
 
 
 
-<title>Upload new File</title>
-<h1>Results</h1>
-
-<!-- Prediction 1 {{data['predictions'][0].get('label')}}
-
-Probability 1 {{data['predictions'][0].get('probability')}}
-
-Prediction 2 {{data['predictions'][1].get('label')}}
-
-Probability 2 {{data['predictions'][1].get('probability')}} -->
-
-
-<!-- {{ data | tojson }} -->
-
-<!-- {{ data['predictions'] }} -->
-
-
-
 <div class="container">
     <div class="row">
       <div class="col-md-12">  
@@ -61,11 +43,7 @@ Probability 2 {{data['predictions'][1].get('probability')}} -->
     <th>Results</th>
     <th>Probability</th>
 
-    <script>
-        //https://stackoverflow.com/questions/11178426/how-can-i-pass-data-from-flask-to-javascript-in-a-template
-        //http://jinja.pocoo.org/docs/2.10/
-        var data = {{ data | tojson }}  //data from python converted to json
-    </script>
+     data
 
   </tr>
 </thead>
@@ -75,8 +53,5 @@ Probability 2 {{data['predictions'][1].get('probability')}} -->
 </div>
 </div>
 </body>
-<!-- <script src="js/index.js"></script> -->
-<!-- <script src="../static/app.js"></script> -->
-<script src="../static/js/app2.js"></script>
 
 
