@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.classification.NaiveBayesModel","timestamp":1540002421095,"sparkVersion":"2.3.2","uid":"NaiveBayes_4bbb939e61c83766039b","paramMap":{"predictionCol":"prediction","modelType":"multinomial","featuresCol":"features","smoothing":1.0,"labelCol":"label","rawPredictionCol":"rawPrediction","probabilityCol":"probability"}}

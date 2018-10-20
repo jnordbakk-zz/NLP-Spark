@@ -28,11 +28,20 @@
 
 
 
-  <title>Upload new File</title>
-<h1>Upload new File </h1>
-<form method=post enctype=multipart/form-data>
+  <title>search term</title>
+<h1>search term  </h1>
+<!-- <form method=post enctype=multipart/form-data>
   <p><input type=file name=file>
      <input type=submit value=Upload>
+</form> -->
+
+<form method="POST" action="/send">
+
+  <label for="inputName">Name</label>
+  <input type="text" id="inputName" name="searchterm">
+
+
+  <input type="submit" value="submit">
 </form>
 
 
