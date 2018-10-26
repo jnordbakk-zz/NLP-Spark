@@ -33,17 +33,16 @@ d3.json(url, function(response) {
           var newLocation = location.split(",").map(parseFloat)
           
 
-              // Setting the marker radius for the city by passing population into the markerSize function
-              predictionMarkers.push(
-                  L.circle(newLocation, {
-                      stroke: false,
-                      fillOpacity: 0.75,
-                      fillColor: getColor(response[i].prediction),
-                      color: "purple",
-                      radius: markerSize(response[i].length) *  2000
-                  }))//.bindPopup("<h1>" + response.Tweet + "</h1>")
-                  //.addTo(myMap);
-              // ); -- old
+          predictionMarkers.push(
+            L.circle(newLocation, {
+                stroke: false,
+                fillOpacity: 0.75,
+                fillColor: getColor(response[i].prediction),
+                color: "purple",
+                radius: markerSize(response[i].length) *  2000
+            }))//.bindPopup("<h1>" + response.Tweet + "</h1>")
+            //.addTo(myMap);
+        // ); -- old
           
 
  
