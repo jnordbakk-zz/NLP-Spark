@@ -40,9 +40,11 @@ d3.json(url, function(response) {
                       fillColor: getColor(response[i].prediction),
                       color: "purple",
                       radius: markerSize(response[i].length) *  2000
-                  }))//.bindPopup("<h1>" + response.Tweet + "</h1>")
-                  //.addTo(myMap);
+                  }).bindPopup("<h1>" + response[i].Tweet + "</h1>"))
+                   .addTo(myMap);
               // ); -- old
+
+    
           
 
  
@@ -81,8 +83,8 @@ d3.json(url, function(response) {
             // Define a map object
             var myMap = L.map("map", {
                 // center: [37.09, -95.71],
-                center:[0,-0],
-                zoom: 3,
+                center:[10, 100],
+                zoom: 2,
                 layers: [streetmap, predictions]
             });
       
