@@ -40,7 +40,7 @@ d3.json(url, function(response) {
                       fillColor: getColor(response[i].prediction),
                       color: "purple",
                       radius: markerSize(response[i].length) *  2000
-                  }).bindPopup("<h1>" + response[i].Tweet + "</h1>"))
+                  }).bindPopup("<h1>" + response[i].coordinates + "</h1>"))
                    .addTo(myMap);
               // ); -- old
 
