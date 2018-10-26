@@ -1,0 +1,58 @@
+<!doctype html>
+<head>
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+  crossorigin=""></script>
+
+     <!-- d3 JavaScript -->
+     <script src="https://d3js.org/d3.v4.min.js"></script>
+     
+    <!-- Marker Cluster JS & CSS -->
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+
+
+
+   
+  <nav class="navbar">
+    <div class="container header-container">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="http://127.0.0.1:5000/">Home</a>
+        </div>
+        <!-- <ul class="nav navbar-nav navbar-right my-menu"> -->
+          <!-- <li><a href="http://127.0.0.1:5000/" class="nav-btn">Home</a></li> -->
+          <!-- <li><a href="http://127.0.0.1:5000/listingsall" class="nav-btn">Data</a></li> -->
+        </ul>
+    </div>
+  </nav>
+
+      
+</head>
+
+<body>
+
+    <h1> </h1>
+
+    <div id="mapplace"></div>
+    <script>
+        //https://stackoverflow.com/questions/11178426/how-can-i-pass-data-from-flask-to-javascript-in-a-template
+        //http://jinja.pocoo.org/docs/2.10/
+        var coord_data = {{data|tojson}}; //data from python converted to json
+    </script>
+    
+    <!--the below is used to make sure the javascripts are found when rendering page from flask-->
+    <!-- https://stackoverflow.com/questions/46349370/javascript-file-not-found-using-relative-path-during-flask-render-template -->
+    <!-- <script src="{{url_for('static', filename='js/config.js')}}"></script>
+    <script src="{{url_for('static', filename='js/map1.js')}}"></script> -->
+
+     <!-- API key -->
+ <script type="text/javascript" src="static/js/config2.js"></script>
+ <!-- Our JS -->
+ <script type="text/javascript" src="static/js/map2.js"></script>
+</div>
+

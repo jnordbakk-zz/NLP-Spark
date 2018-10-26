@@ -1,0 +1,47 @@
+<!doctype html>
+<head>
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> 
+  -->
+   <!-- d3 JavaScript -->
+   <script src="https://d3js.org/d3.v3.min.js"></script>
+   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+   
+  <nav class="navbar">
+    <div class="container header-container">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="http://127.0.0.1:5000/">Image finder</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right my-menu">
+          <li><a href="http://127.0.0.1:5000/" class="nav-btn">Home</a></li>
+          <!-- <li><a href="http://127.0.0.1:5000/listingsall" class="nav-btn">Data</a></li> -->
+        </ul>
+    </div>
+  </nav>
+</head>
+<body>
+
+
+
+
+  <title>search term</title>
+<h1>search term  </h1>
+<!-- <form method=post enctype=multipart/form-data>
+  <p><input type=file name=file>
+     <input type=submit value=Upload>
+</form> -->
+
+<form method="POST" action="/submit">
+
+  <label for="inputName">Name</label>
+  <input type="text" id="inputName" name="searchterm">
+
+
+  <input type="submit" value="submit">
+</form>
+
+</body>
