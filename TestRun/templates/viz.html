@@ -19,7 +19,7 @@
 
 
   <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylemap.css') }}">
 </head>
 
 <body>
@@ -32,6 +32,6 @@
   <script type="text/javascript" src="{{ url_for('static', filename='js/config.js') }}"></script>
   <!-- Our JS -->
   <script>var url ="http://127.0.0.1:5000/send?searchterm={{ search_term }}";console.log(url)</script>
-  <script type="text/javascript" src="{{ url_for('static', filename='js/logic.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/maplogic.js') }}"></script>
 </body>
 </html>

@@ -6,10 +6,10 @@ function markerSize(length) {
 }
 
 function getColor(value) {
-  if (value = 1) {
+  if (value == 1) {
       return "limegreen";
   } else {
-      (value = 0)
+      (value == 0)
       return "red";
   }
 }
