@@ -13,7 +13,7 @@ function markerSize(length) {
         return "red";
     }
   }
-  console.log("RGWRGERGERGERGEER")
+  console.log("map is working")
   // Query url
   // var url = "http://localhost:5000/send";
   
@@ -39,11 +39,22 @@ function markerSize(length) {
                         fillOpacity: 0.75,
                         fillColor: getColor(response[i].prediction),
                         color: "purple",
-                        radius: markerSize(response[i].length) *  2000
-                    }))//.bindPopup("<h1>" + response.Tweet + "</h1>")
-                    //.addTo(myMap);
-                // ); -- old
+                        radius: 100000
+                        // markerSize(response[i].length) *  2000
+                    }).bindPopup("<h1>" + response.Tweet + "</h1>"))
             
+
+                //   // Setting the marker radius for the city by passing population into the markerSize function
+                //   predictionMarkers.push(
+                //     L.circle(newLocation, {
+                //         stroke: false,
+                //         fillOpacity: 0.75,
+                //         fillColor: getColor(response[i].prediction),
+                //         color: "purple",
+                //         radius: markerSize(response[i].length) *  2000
+                //     }))//.bindPopup("<h1>" + response.Tweet + "</h1>")
+                //     //.addTo(myMap);
+                // // ); -- old
   
    
             }

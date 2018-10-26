@@ -146,7 +146,7 @@ def submit():
 @app.route("/viz", methods=["GET"])
 def viz():
     searchterm = request.args.get("searchterm", "apple")
-    return render_template('viz.html', search_term=searchterm)
+    return render_template('viz2.html', search_term=searchterm)
 
 @app.route("/")
 def home():
