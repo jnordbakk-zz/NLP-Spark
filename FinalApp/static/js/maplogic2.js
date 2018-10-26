@@ -39,9 +39,9 @@ function markerSize(length) {
                         fillOpacity: 0.75,
                         fillColor: getColor(response[i].prediction),
                         color: "purple",
-                        radius: 500000
+                        radius: 100000
                         // markerSize(response[i].length) *  2000
-                    }).bindPopup("<h3>" + response[i].Tweet + "</h3>"))
+                    }).bindPopup("<h4>" + response[i].Tweet + "</h4>"))
             
 
                 //   // Setting the marker radius for the city by passing population into the markerSize function
@@ -92,8 +92,8 @@ function markerSize(length) {
               // Define a map object
               var myMap = L.map("map", {
                   // center: [37.09, -95.71],
-                  center:[10, 100],
-                  zoom: 2,
+                  center:[15.5994, -28.6731],
+                  zoom: 3,
                   layers: [streetmap, predictions]
               });
         
